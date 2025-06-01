@@ -15,9 +15,11 @@ public class Application {
     }
 
     public Result run(String[] args) {
+        //encode text.txt encoded.txt 12
         if (args.length > 0) {
-            String action = args[0];
-            String parameters[] = Arrays.copyOfRange(args, 1, args.length);
+            String action = args[0]; //encode
+            // parameters - text.txt encode.txt 12
+            String[] parameters = Arrays.copyOfRange(args, 1, args.length);
 
             mainController.doAction(action, parameters);
         }

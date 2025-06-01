@@ -1,10 +1,11 @@
 package ru.javarush.pastushkov.cryptoanalizer.commands;
 
 import ru.javarush.pastushkov.cryptoanalizer.entity.Result;
+import ru.javarush.pastushkov.cryptoanalizer.entity.ResultCode;
 
 public class Encrypt implements Action{
     @Override
-    public Result execute(String[] parametrs) {
-        return null;
+    public Result execute(String[] parameters) {
+        return new Result("encode all right", ResultCode.OK);
     }
 }
